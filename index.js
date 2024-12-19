@@ -1,4 +1,4 @@
-import { details } from "./api/details.js";
+import { details } from "./constants/details.js";
 
 const cardEl = document.querySelectorAll(".element");
 
