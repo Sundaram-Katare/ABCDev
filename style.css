@@ -1,0 +1,180 @@
+
+.navBar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.leftPart img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rightPart button{
+    font-size: 25px;
+    background-color: rgb(0 122 253);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.container{
+    margin : 6%;
+    background-color: rgba(182, 191, 190, 0.429);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7%;
+
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.lastRow{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+}
+.element{
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: gold;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bolder;
+    transition: background-color 1s;
+    transition: transform .2s;
+    box-shadow: 5px 5px black;
+}
+
+.element:hover{
+    background-color: black;
+    color: white;
+    transform: scale(0.8);
+}
+
+.second{
+    background-color: rgb(192, 0, 199);
+    color: white;
+}
+
+.third{
+    background-color: coral;
+}
+
+.fourth{
+    background-color: limegreen;
+}
+
+.popup-container {
+    height: 0px;
+    display: none;
+}
+
+ .active {
+    position: fixed; /* Keeps the popup fixed relative to the viewport */
+    top: 50%; /* Moves the container 50% down from the top */
+    left: 50%; /* Moves the container 50% right from the left */
+    transform: translate(-50%, -50%); /* Centers it exactly by offsetting 50% of its own width and height */
+    display: flex; /* Optional: useful if you want to center content inside */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    width: 100vw; /* Optional: Full width of viewport */
+    height: 100vh; /* Optional: Full height of viewport */
+    z-index: 999; /* Ensures it's on top of other elements */
+  }
+  
+  .popup-box{
+    visibility: hidden;
+  }
+
+  .popup-box-active {
+    background: white; /* Popup content background */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers text content inside */
+    visibility: visible;
+  }
+
+  .popup-box-active #photo{
+    height: 100px;
+  }
+
+  .popup-box h2{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 13px;
+    max-width: 15px;
+    font-size: 14px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+
+.popup-box h1{
+    font-family: cursive;
+}
+
+.popup-box p{
+    font-family: cursive;
+    font-size: 20px;
+}
+  
+.popup-box #next{
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: lime;
+    color: black;
+    font-size: larger;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.leftFoot{
+    background-color: rgb(0, 30, 114);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    max-height: min-content;
+    padding: 12px;
+    border: 5px solid #a9fffd;
+}
+
+.leftFoot .left h2{
+    font-size: 35px;
+}
+
+@media (max-width : 1450px){
+    .row{
+        grid-template-columns: repeat(5 , 1fr);
+    }
+}
